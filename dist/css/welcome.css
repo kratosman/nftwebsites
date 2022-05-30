@@ -1,0 +1,680 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.side-bar {
+    width: 250px;
+    height: 100%;
+    bottom: 0;
+    border-right: 1px solid rgb(131, 128, 128);
+    top: 0;
+    left: 0;
+    position: fixed;
+    transition: 0.5s;
+    background-color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navbar{
+    border-bottom: 1px solid rgb(131, 128, 128);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    left: 250px;
+    transition: 0.5s;
+    z-index: 1;
+}
+.menu {
+    cursor: pointer;
+}
+.search-bar{
+    border: 1px solid black;
+    width: 350px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 7px;
+}
+.search-bar  svg{
+    width: 20px;
+}
+.search-bar input {
+    width: 350px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 5px;
+}
+.language-system{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 15px;
+}
+.d-flex-col{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.main {
+    padding-left:250px;
+    transition: 0.5s;
+}
+.main .user-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    gap: 10px;
+}
+.main .user-profile .notification{
+    cursor: pointer;
+}
+.main .user-profile .user-profile-image{
+    cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px;
+    height: 76px;
+    gap: 3px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    
+}
+.link-pages{
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.link-pages ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.link-pages ul li{
+    list-style-type: none;
+    cursor: pointer;
+    height: 40px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 10px;
+}
+.link-pages ul li a{
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    gap: 10px;
+}
+.logout-system{
+    padding: 0 15px 0 15px;
+}
+.logout-system ul a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: red;
+    padding-left: 10px;
+    border-radius: 7px;
+    gap: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.top-header-area{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 35px;
+    padding-right: 35px;
+    justify-content: space-between;
+}
+.marketplace span{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.articles-section{
+    padding-top: 76px;
+}
+.filter-images svg {
+    cursor: pointer;
+}
+.card-market-area{
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    row-gap:50px;
+    flex-wrap: wrap;
+}
+.car-flex{
+    background-color: #f1f2f6;
+    width: 256px;
+    height: 380px;
+    border-radius:20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-top-header{
+    padding: 10px;
+    border-radius: 20px 20px 0 0;
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+.card-top-header svg{
+    cursor: pointer;
+}
+.card-top-header span {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 17px;
+}
+.center-mid-body{
+    border: 1px solid #747d8c;
+    height: 250px;
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-flex-images-left img{
+    border-radius:10px 0 0 10px;
+}
+.footer-bottom-end{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+}
+.btn-bid-now{
+    padding: 8px 39px;
+    position: absolute;
+    transform: translate(0%,100%);
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.text-price{
+    display: flex;
+    gap: 10px;
+}
+.profile-link{
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.filter-images{
+    display: flex;
+    gap: 20px;
+}
+.add-new-collection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    background-color: #5352ed;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: 5px;
+}
+.modal-card-flex{
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+.modal-card-creation-contents{
+    background-color: white;
+    border-radius: 10px;
+    height: 530px;
+    width: 850px;
+    margin-inline: auto;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-display-left{
+    width: 100%;
+    height: 100%;
+}
+.information-desc-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.name-of-your-cards{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+
+}
+.name-of-your-cards input{
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.description-cards{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+.description-cards textarea{
+    width: 350px;
+    height: 70px;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding-left: 10px;
+    resize: none;
+    padding-top: 10px;
+}
+.tag-price{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+}
+.tag-price input{
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+.button-create-collections{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button-create-collections button{
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border:none;
+}
+.button-create-collections button:nth-child(1){
+    background-color:#5352ed;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}
+.button-create-collections button:nth-child(2){
+    font-weight: 700;
+    cursor: pointer;
+}
+.top-header-card-creation{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    padding-left: 33px;
+}
+.card-display-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-add{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+.image-add input,
+input[type=file]::-webkit-file-upload-button{
+    position: absolute;
+    cursor: pointer;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    background-color: white;
+    width: 20px;
+    overflow: hidden;
+}
+.image-marketplace{
+    user-select: none;
+    object-fit: fill;
+}
+.modal-card-flex-desc{
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+}
+.content-card-flex-desc{
+    background-color: white;
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 65px;
+    border-radius: 10px;
+    display: flex;
+}
+.card-flex-images-left{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+.card-flex-desc-right{
+    width: 100%;
+    height: 100%;
+}
+.card-flex-desc-right{
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+}
+.name-of-card-flex-user-given h1{
+    font-size: 50px;
+    width: 100%;
+}
+.desc-user-given{
+    border: 1px solid gray;
+    padding: 10px;
+    word-break: break-all;
+    font-size: 15px;
+}
+.views-count span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 800;
+}
+.add-to-cart-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.heart-to-cart svg{
+    color: gray;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.heart-to-cart svg:hover {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.heart-to-cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heart-to-cart span {
+    font-weight: 800;
+}
+.remove-listing{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.remove-listing .delete{
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remove-listing a:nth-child(1){
+    background-color: 	#df4759;
+    color: white;
+}
+.remove-listing .cancel-card-flex-listing{
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-header-contact{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.top-header-contact h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20pt;
+}
+.form-field-contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 100px;
+    gap: 20px;
+}
+.form-field-contact-us input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+}
+.form-field-contact-us textarea{
+    width: 100%;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+}
+.form-field-contact-us button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #5352ed;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form-field-contact-us input::placeholder{
+    font-size: 18px;
+}
+.articles-section{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.articles-section table {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.articles-section table tr{
+    border: 1px solid black;
+}
+.articles-section table tr th, td{
+    padding: 10px;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: #ced6e0;
+    color: #2f3542;
+}
+.articles-section{
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+}
+@media (max-width:500px){
+    .articles-section table {
+        width: 50%;
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-card-creation-contents{
+        background-color: white;
+        border-radius: 10px;
+        height: 570px;
+        width: 450px;
+        margin-inline: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .content-card-flex-desc{
+        display: flex;
+        flex-direction: column;
+        width:450px;
+        height:450px;
+        background-color:white;
+        overflow:scroll
+    }
+    .content-card-flex-desc::-webkit-scrollbar{
+        width:0;
+    }
+    .card-display-left{
+        width: 100%;
+        height: 100%;
+    }
+    .information-desc-right{
+        width: 100%;
+        height: 100%;
+
+    }
+    .card-market-area{
+        height: 100vh;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+       
+    }
+    .card-market-area{
+        height: 100vh;
+        padding: 20px;
+        display: flex;
+        gap: 20px;
+        row-gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        left: 0px;
+    }
+    .side-bar{
+        transition: 0.5s;
+        width: 0;
+    }
+    .main {
+        padding-left:0px;
+        transition: 0.5s;
+    }
+    .search-bar{
+        border: 1px solid black;
+        width: 100px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        align-items: center;
+        padding-left: 5px;
+        border-radius: 7px;
+    }
+    .search-bar  svg{
+        width: 20px;
+    }
+    .search-bar input {
+        width: 65px;
+        height: 35px;
+        border: none;
+        background: none;
+        outline: none;
+        padding-left: 5px;
+    }
+}
+@media(max-width:375px){
+    .modal-card-creation-contents{
+        background-color: white;
+        border-radius: 10px;
+        height: 500px;
+        width: 320px;
+        margin-inline: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

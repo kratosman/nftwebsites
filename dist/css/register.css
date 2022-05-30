@@ -1,0 +1,283 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color-Raspberry:hsl(355, 57%, 48%);
+}
+body{
+    text-rendering: optimizeLegibility;
+    line-height: 1.15;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.d-flex-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.image-area img{
+    width: 650px;
+}
+.login-session{
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.login-field-area{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 13px;
+}
+.login-field-area .username{
+    border: 1px solid black;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+} 
+.username i {
+    padding: 5px;
+}
+.login-field-area .username input{
+    width: 380px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.login-field-area .password{
+    border: 1px solid black;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+} 
+.password i {
+    padding: 5px;
+}
+.login-field-area .password input{
+    width: 350px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.login-field-area .re-password{
+    border: 1px solid black;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    
+} 
+.re-password i {
+    padding: 5px;
+}
+.fa-eye {
+    cursor: pointer;
+}
+.fa-eye-slash {
+    cursor: pointer;
+}
+.login-field-area .re-password input{
+    width: 350px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.btn-create-account{
+    padding: 15px 32px;
+    cursor: pointer;
+    background-color: var(--color-Raspberry);
+    color: white;
+    font-weight: 900;
+    border: none;
+    border-radius: 7px;
+}
+.image-area{
+    display: flex;
+    flex-direction: column;
+    font-size: 900;
+    font-size: 35px;
+    gap: 20px;
+}
+
+/* MODAL MODAL MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+.modal-content{
+    background-color: white;
+    width: 465px;
+    height: 465px;
+    margin-inline: auto;
+    margin-top: 50px;
+    padding: 25px;
+    border-radius: 10px;
+}
+.modal-content form{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.modal-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-header .btn-close {
+    font-size: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.modal-body-login-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.modal-body-login-field input {
+    height: 50px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid black;
+    padding: 15px;
+}
+.modal-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.modal-footer button {
+    padding: 16px 100px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.modal-footer button:nth-child(1){
+    background-color: var(--color-Raspberry);
+    color: white;
+}
+.login-text{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.links{
+    position: fixed;
+    background-color: black;
+    padding: 10px;
+    top: 35%;
+    border-radius: 0 20px 20px 0;
+    transition: 0.5s;
+    width: 55px;
+}
+/* MOBILE VERSION */
+@media(max-width:500px){
+    .links{
+        transition: 0.5s;
+        width: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .image-area{
+        display: flex;
+        flex-direction: column;
+        font-size: 900;
+        font-size: 35px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-area img{
+        width: 400px;
+    }
+    .modal{
+        overflow: hidden;
+    }
+    .modal-content{
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        margin-inline: auto;
+        margin-top: 0;
+        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        border-radius: 0px;
+        
+    }
+    .login-session{
+        display: flex;
+        align-items: center;
+    }
+}
+@media(max-width:375px){
+    .image-area{
+        display: flex;
+        flex-direction: column;
+        font-size: 900;
+        font-size: 35px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-area img{
+        width: 300px;
+    }
+    .login-field-area .username input{
+        width: 200px;
+        height: 29px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .login-field-area .password input{
+        width: 200px;
+        height: 29px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .login-field-area .re-password input{
+        width: 200px;
+        height: 29px;
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .login-session{
+        display: flex;
+        align-items: center;
+    }
+    .image-area span {
+        font-size: 25px;
+    }
+}

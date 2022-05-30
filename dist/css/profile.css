@@ -1,0 +1,208 @@
+.cover-photo{
+    border-bottom: 1px solid black;
+    height: 288px;
+    width: 100%;
+    position: relative;
+}
+.profile-photo{
+    border: 3px solid white;
+    height: 120px;
+    width: 120px;
+    border-radius: 100px;
+    position: absolute;
+    bottom: -65px;
+    left: 44.7%;
+    overflow: hidden;
+    background-color: #3742fa;
+}
+.edit-profile{
+    display: flex;
+    background-color: #747d8c;
+    color: white;
+    cursor: pointer;
+    gap: 5px;
+    width: 132px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 900;
+    border-radius: 7px;
+    bottom: 0;
+    position: absolute;
+    margin: 20px;
+}
+.modal-profile-editor{
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    display: none;
+}
+.modal-profile-editor-contents{
+    background-color: white;
+    width: 24rem;
+    height: 37.5rem;
+    border-radius: 7px;
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-profile-editor-contents::-webkit-scrollbar{
+    background: yellow;
+    width: 0;
+}
+
+.cover-photo-modal{
+    height: 128px;
+    border-radius: 7px;
+    position: relative;
+    background-color: #5352ed;
+}
+.cover-photo-modal .cover-file{
+    border: 1px solid red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.profile-image{
+    border: 3px solid white;
+    position: relative;
+    top: -40px;
+    left: 37%;
+    height: 90px;
+    width: 90px;
+    border-radius: 100px;
+    overflow: hidden;
+    background-color: #ff4757;
+}
+.profile-image .profile-image-file{
+    border: 1px solid red;
+    height: 80px;
+    opacity: 0;
+}
+.header-text{
+    margin-top: 25px;
+}
+.header-text h1 strong{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+
+}
+.bio textarea{
+    resize: none;
+    outline: none;
+    padding: 10px;
+    height: 96px;
+    border-radius:10px ;
+    font-size: 18px;
+}
+.instagram{
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.instagram input{
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.twitter{
+    display: flex;
+    flex-direction: column;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+.twitter input{
+    height: 30px;
+    border-radius: 7px;
+    border: 1px solid black;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 25px;
+}
+.btn-area-modal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.btn-area-modal button:nth-child(1){
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    background-color: #3742fa;
+    color: white;
+    cursor: pointer;
+}
+.btn-area-modal button:nth-child(2){
+    height: 50px;
+    border-radius: 7px;
+    border: none;
+    font-weight: 700;
+    background-color: #a4b0be;
+    color:#3742fa;
+    cursor: pointer;
+}
+.biodata-of-a-user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    flex-direction: column;
+}
+.biodata-of-a-user .name {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.biodata-of-a-user .bio-data-txt{
+    width: 300px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    line-height: 2;
+    word-wrap:break-word;
+}
+.link-of-user{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+@media(max-width:500px){
+    .profile-photo{
+        border: 3px solid white;
+        height: 120px;
+        width: 120px;
+        border-radius: 100px;
+        position: absolute;
+        bottom: -65px;
+        left: 37%;
+        overflow: hidden;
+    }
+}
